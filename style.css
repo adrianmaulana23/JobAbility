@@ -1,0 +1,128 @@
+:root {
+    --primary-blue: #1f4489;
+    --primary-orange: #fca34d;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: white;
+}
+
+.btn-primary-custom:hover {
+    background-color: #1a3c7a;
+    border-color: #1a3c7a;
+}
+
+.btn-outline-primary-custom {
+    color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-outline-primary-custom:hover {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: white;
+}
+
+.bg-primary-custom {
+    background-color: var(--primary-blue) !important;
+}
+
+.bg-orange-custom {
+    background-color: var(--primary-orange) !important;
+}
+
+.text-primary-custom {
+    color: var(--primary-blue) !important;
+}
+
+.text-orange-custom {
+    color: var(--primary-orange) !important;
+}
+
+.search-input {
+    background-color: var(--primary-orange);
+    border: none;
+    color: white;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.search-input:focus {
+    background-color: var(--primary-orange);
+    color: white;
+    box-shadow: 0 0 0 0.2rem rgba(252, 163, 77, 0.25);
+}
+
+.feature-icon {
+    background-color: var(--primary-orange);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.job-card {
+    transition: transform 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-2px);
+}
+
+.webinar-badge {
+    background-color: var(--primary-orange);
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.testimonial-carousel {
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: -20px;
+}
+
+.carousel-control-next {
+    right: -20px;
+}
+
+.footer-bg {
+    background-color: #000;
+}
+
+.hero-section {
+    padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+}
